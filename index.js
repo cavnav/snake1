@@ -1,12 +1,13 @@
 (() => {canvasElement = document.getElementById('gameField');
-canvasElement.width = 400;
-canvasElement.height = 400;
 canvasContext = canvasElement.getContext("2d");
 
 x = 0;
 y = 0;
 dx = 0;
 dy = 0;
+
+width = canvasElement.width;
+height = canvasElement.height;
 
 setInterval(() => {
   x = x + dx;
